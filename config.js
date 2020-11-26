@@ -37,7 +37,7 @@ function loadTheContent() {
         //then here we will update the progress bar, updating the value is the idea here
         thevalue  = thevalue + 50; 
         document.getElementById("theProgress").style = "width:"+thevalue+"%;";
-        document.getElementById("thevalue").innerHTML = theValue;
+        document.getElementById("theValue").innerHTML = thevalue;
     }
      document.getElementById("demo").innerHTML = "download complete";
 }
