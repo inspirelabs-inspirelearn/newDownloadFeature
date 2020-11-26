@@ -17,7 +17,7 @@ function loadTheContent() {
     // and this one is for looping
     var thevalue = 0;
     var readContent = "";
-    for (i = 1; i < 2; i++) {
+    for (i = 0; i < 1; i++) {
        document.getElementById("demo").innerHTML = "download in progress";
         console.log(obj.contentObject[i].mediaFile);
         readContent = obj.contentObject[i].mediaFile;
