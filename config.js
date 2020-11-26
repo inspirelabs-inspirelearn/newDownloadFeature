@@ -25,8 +25,7 @@ function loadTheContent() {
         // setting a standby timer
         // setTimeout(procedure, 1000);
 
-        thevalue  = thevalue + 50; 
-        document.getElementById("theProgress").style = "width:"+thevalue+"%;";
+      
         // document.getElementById("demo").innerHTML = "download in progress";
         //this is what we are going to apply using our method
 
@@ -34,7 +33,10 @@ function loadTheContent() {
         link.download = obj.contentObject[i].mediaFile;
         link.href= obj.contentObject[i].mediaFile;
         link.click();
+        link.remove();
         //then here we will update the progress bar, updating the value is the idea here
+        thevalue  = thevalue + 50; 
+        document.getElementById("theProgress").style = "width:"+thevalue+"%;";
     }
      document.getElementById("demo").innerHTML = "download complete";
 }
