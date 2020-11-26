@@ -54,7 +54,7 @@ function loadTheContent() {
        
 //      console.log(obj.contentObject[i].mediaFile);
         readContent = obj.contentObject[i].mediaFile;
-        document.getElementById("demo").innerHTML = readContent;
+        document.getElementById("demo").innerHTML = "hello there";
       
      }
      //document.getElementById("demo").innerHTML = "download complete";
