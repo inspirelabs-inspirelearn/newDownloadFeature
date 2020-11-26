@@ -31,22 +31,9 @@
 //     }
 //      document.getElementById("demo").innerHTML = "download complete";
 
-
-//new code here, no loop
-
-var mediaContent = '{'+
-  '"contentObject" : ['+
-    '{"mediaFile":"mediaContent/videoOne.mp4"},'+
-    '{"mediaFile":"mediaContent/audioTwo.mp3"}'+
-  ']'+
-'}';
-
-var obj = JSON.parse(mediaContent);
-
 function loadTheContent() {
-    var link = document.createElement("a");
-        link.download = obj.contentObject[0].mediaFile;
-        link.href= obj.contentObject[0].mediaFile;
-        link.click();
-        link.remove();  
+   var a = document.createElement('a'); 
+   a.href="mediaContent/audioTwo.mp3";
+   a.download = "mediaContent/audioTwo.mp3";
+   a.click();
 }
