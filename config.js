@@ -37,9 +37,8 @@
 
 var mediaContent = '{'+
   '"contentObject" : ['+
-    '{"mediaFile":"mediaContent/videoOne.mp4"},'+
-    '{"mediaFile":"mediaContent/audioTwo.mp3"},'+
     '{"mediaFile":"mediaContent/videoOne.mp4"}'+
+   
   
   ']'+
 '}';
