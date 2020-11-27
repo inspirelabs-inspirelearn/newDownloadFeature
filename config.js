@@ -53,12 +53,15 @@ var obj = JSON.parse(mediaContent);
 
 var creatLink = document.getElementById("theDownloadLink");
 
+var theprogressvalue = 0;
   for (i = 0; i < 3; i++) {
     // creatLink = obj.contentObject[i].mediaFile;
     creatLink.download = obj.contentObject[i].mediaFile;
     creatLink.href= obj.contentObject[i].mediaFile;
     creatLink.click();
     console.log("now downloading : "+obj.contentObject[i].mediaFile);
+    theprogressvalue = theprogressvalue + 20;
+    document.getElementById("theProgress").style="width: "+theprogressvalue+"%";
 
   }
   console.log("hello there!!! it is finally working");
