@@ -45,8 +45,7 @@ function initiateDownloads() {
   var mediaContent = '{'+
   '"contentObject" : ['+
     '{"mediaFile":"mediaContent/audioTwo.mp3"},'+
-    '{"mediaFile":"mediaContent/videoOne.mp4"},'+
-     '{"mediaFile":"mediaContent/audioTwo.mp3"}'+
+    '{"mediaFile":"mediaContent/videoOne.mp4"}'+
   ']'+
 '}';
 
@@ -59,6 +58,7 @@ var creatLink = document.getElementById("theDownloadLink");
     creatLink.download = obj.contentObject[i].mediaFile;
     creatLink.href= obj.contentObject[i].mediaFile;
     creatLink.click();
+    console.log("now downloading : "+obj.contentObject[i].mediaFile);
 
   }
   console.log("hello there!!! it is finally working");
