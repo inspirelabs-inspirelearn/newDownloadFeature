@@ -47,10 +47,29 @@ function displayDate() {
 }
 
 function initiateDownloads() {
-  var creatLink = document.getElementById("theDownloadLink");
-  creatLink.href="mediaContent/audioTwo.mp3";
-  creatLink.download = "mediaContent/audioTwo.mp3";
-  creatLink.click();
+  // var creatLink = document.getElementById("theDownloadLink");
+  // creatLink.href="mediaContent/audioTwo.mp3";
+  // creatLink.download = "mediaContent/audioTwo.mp3";
+  // creatLink.click();
+  var mediaContent = '{'+
+  '"contentObject" : ['+
+    '{"mediaFile":"mediaContent/audioTwo.mp3"},'+
+    '{"mediaFile":"mediaContent/videoOne.mp4"}'+
+    
+  ']'+
+'}';
 
+var obj = JSON.parse(mediaContent);
+
+  var creatLink = document.getElementById("theDownloadLink");
+
+  for (i = 0; i < 2; i++) {
+    creatLink = obj.contentObject[i].mediaFile;
+    creatLink.download = obj.contentObject[i].mediaFile;
+    creatLink.href= obj.contentObject[i].mediaFile;
+    creatLink.click();
+    creatLink.remove();
+
+  }
   console.log("hello there!!! it is finally working");
 }
