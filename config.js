@@ -41,18 +41,16 @@ function loadTheContent() {
 
 
 
-document.getElementById("btnToLink").addEventListener("click", displayDate);
+document.getElementById("btnToLink").addEventListener("click", initiateDownloads);
 function displayDate() {
-  document.getElementById("para").innerHTML = Date();
+  document.getElementById("para").innerHTML = "download now in progress";
 }
 
-
-
 function initiateDownloads() {
-  // var creatLink = document.getElementById("theDownloadLink");
-  // creatLink.href="mediaContent/audioTwo.mp3";
-  // creatLink.download = "mediaContent/audioTwo.mp3";
-  // creatLink.click();
+  var creatLink = document.getElementById("theDownloadLink");
+  creatLink.href="mediaContent/audioTwo.mp3";
+  creatLink.download = "mediaContent/audioTwo.mp3";
+  creatLink.click();
 
-  console.log("hello there!!!");
+  console.log("hello there!!! it is finally working");
 }
