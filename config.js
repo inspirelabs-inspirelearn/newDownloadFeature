@@ -45,4 +45,4 @@ function loadTheContent() {
                        document.getElementById("para").innerHTML = "download is now in progress";
                 
             }
-document.getElementById("theDownloadLink").addEventListener('click', initiateDownloads);
+document.getElementById("theButton").addEventListener('click', initiateDownloads);
