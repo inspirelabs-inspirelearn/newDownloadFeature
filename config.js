@@ -1,12 +1,3 @@
-var mediaContent = '{'+
-  '"contentObject" : ['+
-    '{"mediaFile":"mediaContent/audioTwo.mp3"},'+
-    '{"mediaFile":"mediaContent/videoOne.mp4"}'+
-    
-  ']'+
-'}';
-
-var obj = JSON.parse(mediaContent);
 
 function loadTheContent() {
     //this line is for accessing a single object
@@ -61,7 +52,7 @@ function initiateDownloads() {
 
 var obj = JSON.parse(mediaContent);
 
-  var creatLink = document.getElementById("theDownloadLink");
+var creatLink = document.getElementById("theDownloadLink");
 
   for (i = 0; i < 3; i++) {
     // creatLink = obj.contentObject[i].mediaFile;
