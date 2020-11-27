@@ -37,3 +37,12 @@ function loadTheContent() {
    a.download = "mediaContent/audioTwo.mp3";
    a.click();
 }
+ function initiateDownloads() {
+//                     var creatLink = document.getElementById("theDownloadLink");
+//                     creatLink.href="mediaContent/audioTwo.mp3";
+//                     creatLink.download = "mediaContent/audioTwo.mp3";
+//                     creatLink.click();
+                       document.getElementById("para").innerHTML = "download is now in progress";
+                
+            }
+document.getElementById("theDownloadLink").addEventListener('click', initiateDownloads);
