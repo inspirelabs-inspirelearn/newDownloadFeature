@@ -60,8 +60,8 @@ var theprogressvalue = 0;
     creatLink.href= obj.contentObject[i].mediaFile;
     creatLink.click();
     
-    theprogressvalue = theprogressvalue + 20;
-    document.getElementById("theProgress").style="width: "+theprogressvalue+"%";
+    //theprogressvalue = theprogressvalue + 20;
+    //document.getElementById("theProgress").style="width: "+theprogressvalue+"%";
 
   }
   console.log("hello there!!! it is finally working");
