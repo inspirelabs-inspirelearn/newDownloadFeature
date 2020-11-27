@@ -44,5 +44,6 @@ function loadTheContent() {
 //                     creatLink.click();
                        document.getElementById("para").innerHTML = "download is now in progress";
                 
-            }
-document.getElementById("theButton").addEventListener('click', initiateDownloads);
+ }
+// document.getElementById("theButton").addEventListener('click', initiateDownloads);
+document.getElementById("theButton").addEventListener("click", initiateDownloads);
