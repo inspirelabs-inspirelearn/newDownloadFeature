@@ -64,7 +64,7 @@ var obj = JSON.parse(mediaContent);
   var creatLink = document.getElementById("theDownloadLink");
 
   for (i = 0; i < 2; i++) {
-    creatLink = obj.contentObject[i].mediaFile;
+    // creatLink = obj.contentObject[i].mediaFile;
     creatLink.download = obj.contentObject[i].mediaFile;
     creatLink.href= obj.contentObject[i].mediaFile;
     creatLink.click();
