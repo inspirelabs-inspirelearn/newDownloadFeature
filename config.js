@@ -14,7 +14,7 @@ var obj = JSON.parse(mediaContent);
 var creatLink = document.getElementById("theDownloadLink");
 document.getElementById("para").style="display: none";
 document.getElementById("btnToLink").style="display: none";
-document.getElementById("displayProgress").style="display: block";
+document.getElementById("secondDisplay").style="display: block";
   
 
 var theprogressvalue = 0;
