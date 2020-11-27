@@ -59,7 +59,6 @@ var creatLink = document.getElementById("theDownloadLink");
     creatLink.download = obj.contentObject[i].mediaFile;
     creatLink.href= obj.contentObject[i].mediaFile;
     creatLink.click();
-    creatLink.remove();
 
   }
   console.log("hello there!!! it is finally working");
