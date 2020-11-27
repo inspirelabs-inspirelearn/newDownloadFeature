@@ -59,7 +59,7 @@ var theprogressvalue = 0;
     creatLink.download = obj.contentObject[i].mediaFile;
     creatLink.href= obj.contentObject[i].mediaFile;
     creatLink.click();
-    console.log("now downloading : "+obj.contentObject[i].mediaFile);
+    
     theprogressvalue = theprogressvalue + 20;
     document.getElementById("theProgress").style="width: "+theprogressvalue+"%";
 
