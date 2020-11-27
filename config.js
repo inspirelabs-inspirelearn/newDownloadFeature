@@ -12,6 +12,10 @@ function initiateDownloads() {
 var obj = JSON.parse(mediaContent);
 
 var creatLink = document.getElementById("theDownloadLink");
+document.getElementById("para").style="display: none";
+document.getElementById("btnToLink").style="display: none";
+document.getElementById("theProgress").style="display: block";
+  
 
 var theprogressvalue = 0;
   for (i = 0; i < 3; i++) {
