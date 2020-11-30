@@ -17,13 +17,14 @@ document.getElementById("secondDisplay").style="display: block";
   
 
 var theprogressvalue = 0;
-  for (i = 0; i < 3; i++) {
+var ObjectLength = obj.contentObject.length;
+theprogressvalue = 100 / ObjectLength;
+  
+  for (i = 0; i < ObjectLength; i++) {
     // creatLink = obj.contentObject[i].mediaFile;
     creatLink.download = obj.contentObject[i].mediaFile;
     creatLink.href= obj.contentObject[i].mediaFile;
     creatLink.click();
-    
-    theprogressvalue = theprogressvalue + 20;
     document.getElementById("theProgress").style="width: "+theprogressvalue+"%";
 
   }
